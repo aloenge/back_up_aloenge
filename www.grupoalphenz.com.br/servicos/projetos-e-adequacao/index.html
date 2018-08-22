@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if (lt IE 9) | (IE 9)]> <html class="ie9"> <![endif]-->
+<!--[if gt IE 10]><!--> <html lang="pt-br"> <!--<![endif]-->
+	
+<!-- Mirrored from www.grupoalphenz.com.br/servicos/projetos-e-adequacao/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Aug 2018 16:31:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Alphenz</title>
+
+		<base >
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,700,700italic">
+		<link rel="stylesheet" href="../../assets/css/main.css">
+		<link rel="stylesheet" href="../../assets/css/style.css">
+		<link rel="shortcut icon" href="../../assets/images/favicon.png">
+
+		<script>
+			function initMap() {
+				var myLatLng = {lat: -22.720970, lng: -47.643027};
+
+				var isDraggable = $(document).width() > 768 ? true : false;
+
+				var customMapType = new google.maps.StyledMapType([
+				{
+					stylers: [
+					{hue: '#EE7025'},
+					{visibility: 'simplified'},
+					{gamma: 0.5},
+					{weight: 0.5}
+					]
+				},
+				{
+					featureType: 'water',
+					stylers: [{color: '#125a71'}]
+				}
+				], {
+					name: 'Custom Style'
+				});
+
+				var customMapTypeId = 'custom_style';
+
+				// Create a map object and specify the DOM element for display.
+				var map = new google.maps.Map(document.getElementById('map'), {
+					center: myLatLng,
+					zoomControl: true,
+					scrollwheel: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: true,
+					rotateControl: true,
+					fullscreenControl: true,
+					draggable: isDraggable,
+					zoom: 15,
+					mapTypeControlOptions: {
+      					mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+    				}
+				});
+
+				map.mapTypes.set(customMapTypeId, customMapType);
+ 				map.setMapTypeId(customMapTypeId);
+
+				// Create a marker and set its position.
+				var image = "../../assets/images/ico-place-alphenz.png";
+				
+				var marker = new google.maps.Marker({
+					position: myLatLng,
+					map: map,
+					icon: image
+				});
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+    <body>
+					<header id="masthead">
+                <div class="masthead-normal">
+                    <nav class="navbar">
+                        <div class="container">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#">
+                                    <img class="brand" src="../../assets/images/logo.svg" alt="Grupo Alphenz">
+                                </a>
+
+                                <div id="top-links">
+                                    <div class="misc">
+                                        <a href="../../acompanhe-seu-projeto/index.html">Área restrita</a><!--
+                                        --><a href="../../trabalhe-conosco.php">Trabalhe conosco</a><!--
+                                        --><a href="https://www.helloethics.com/alphenz" target="_blank">Canal de ética</a>
+                                    </div>
+
+                                    <div class="social-medias">
+                                        <a href="https://www.facebook.com/GrupoAlphenz" target="_blank"><img src="../../assets/images/fb.png" alt="" class="hover"></a>
+                                        <a href="http://www.youtube.com/channel/UCKqVX8EvWZf9eBVAzhVaHWQ" target="_blank"><img src="../../assets/images/yt.png" alt="" class="hover"></a>
+                                        <a href="http://www.linkedin.com/company/grupo-alphenz" target="_blank"><img src="../../assets/images/it.png" alt="" class="hover"></a>
+                                        <a href="https://www.instagram.com/grupoalphenz/" target="_blank"><img src="../../assets/images/ig.png" alt="" class="hover"></a>
+                                    </div>
+
+                                    <div class="tel">
+                                        <span><img src="../../assets/images/tel.png" alt="" class="hover"> 19 <b>3302.9606</b></span>
+                                    </div>
+
+                                    <div class="lang lang-popup">
+                                        <span>
+                                            Idioma
+                                            <img src="../../assets/images/pt-br.png" alt="PT">
+                                            <a href="../../assets/images/popup_idiomas_ingles.jpg"><img src="../../assets/images/en.png" alt="EN"></a>
+                                            <a href="../../assets/images/popup_idiomas_alemao.jpg"><img src="../../assets/images/ge.png" alt="GE"></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="../../empresa/index.html">Empresa</a></li>
+                                    <li><a href="../../produtos/index.html">Produtos</a></li>
+                                    <li><a href="../index.html">Serviços</a></li>
+                                    <li><a href="../../clientes/index.html">Clientes</a></li>
+                                    <li><a href="../../videos/index.html">Vídeos</a></li>
+                                    <li><a href="../../contato/index.html">Contato</a></li>
+                                </ul>
+
+                                <div class="loja-virtual hidden-xs hidden-sm">
+                                    <a href="http://alphenzindustria.lojavirtualnuvem.com.br/" target="_blank"><img src="../../assets/images/cart.png" alt=""> Loja Virtual</a>
+                                </div>
+
+                                <a href="../../contato/index.html" class="btn btn-orcamento" role="button"><img src="../../assets/images/orcamento.png" alt=""> Solicite um orçamento</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- ~~ -->
+
+                <div class="masthead-mobile">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-mobile">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div>
+                                <a href="#">
+                                    <img class="img-responsive" width="215" src="../../assets/images/logo.svg" alt="Grupo Alphenz">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="menu-mobile">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../../empresa/index.html">Empresa</a></li>
+                                <li><a href="../../produtos/index.html">Produtos</a></li>
+                                <li><a href="../index.html">Serviços</a></li>
+                                <li><a href="../../clientes/index.html">Clientes</a></li>
+                                <li><a href="../../videos/index.html">Vídeos</a></li>
+                                <li><a href="../../contato/index.html">Contato</a></li>
+                                <li>
+                                    <a class="text-orange" href="http://alphenzindustria.lojavirtualnuvem.com.br/" target="_blank">
+                                        <img src="../../assets/images/cart.png" alt=""> Loja Virtual
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="masthead-mobile-separator"></div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong class="tel">(19) 3302-9606</strong>
+
+                            <a href="../../contato/index.html" class="btn btn-orcamento" role="button">
+                                <img src="../../assets/images/orcamento.png" alt=""> Solicite um orçamento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+			</header>
+		
+			<div id="main-content">
+		
+		<div class="heading">
+			<div class="container">
+				<h1>Serviços</h1>
+			</div>
+		</div>
+
+		<main id="servico">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-3">
+						<button class="toggle-side-nav btn visible-sm visible-xs collapsed" data-toggle="collapse" data-target=".aside-menu">Categorias de Serviços</button>
+
+						<aside>
+							<ul class="nav aside-menu collapse">
+								<li class='active'><a href="index.html"><span class="ico"><img src="../../assets/images/ico-projeto-small.png" alt=""></span>Projetos e Adequação</a></li>
+								<li ><a href="../analises-laboratoriais/index.html"><span class="ico"><img src="../../assets/images/ico-analises-small.png" alt=""></span>Análises Laboratoriais</a></li>
+								<li ><a href="../aluguel-de-estacoes/index.html" class="lh"><span class="ico"><img src="../../assets/images/ico-aluguel.png" alt="" height="36"></span><span style="margin-top: 7px; float: left;">Aluguel de Estações</span></a></li>
+								<li ><a href="../acompanhamento-tecnico/index.html" class="lh"><span class="ico"><img src="../../assets/images/ico-tecnico-small.png" alt=""></span>Acompanhamento <br> Técnico</a></li>
+								<li ><a href="../treinamentos/index.html"><span class="ico"><img src="../../assets/images/ico-treinamentos-small.png" alt=""></span>Treinamentos</a></li>
+								<li ><a href="../monitoramento/index.html"><span class="ico"><img src="../../assets/images/ico-monitoramento-small.png" alt=""></span>Monitoramento</a></li>
+								<li ><a href="../operacao-e-manutencao/index.html"><span class="ico"><img src="../../assets/images/ico-manutencao-small.png" alt=""></span>Opera e Manutenção</a></li>
+								<li ><a href="../acessorios/index.html"><span class="ico"><img src="../../assets/images/ico-acessorios-small.png" alt=""></span>Acessórios</a></li>
+								<li ><a href="../insumos/index.html"><span class="ico"><img src="../../assets/images/ico-pecas-small.png" alt=""></span>Insumos</a></li>
+								<li ><a href="../transporte/index.html"><span class="ico"><img src="../../assets/images/ico-transportes.png" height="28"></span>Transporte</a></li>
+								<li ><a href="../montagem-e-instalacao/index.html" style="padding-right: 13px"><span class="ico"><img src="../../assets/images/ico-montagem-instalacao.png" height="32"></span>Montagem e Instalação</a></li>
+							</ul>
+
+							<div id="compre-online" class="hidden-xs hidden-sm">
+								<h2>Compre Online</h2>
+								<p><a href="http://alphenzindustria.lojavirtualnuvem.com.br/" target="_blank"><img src="../../assets/images/big-cart.png" alt=""> Acesse nossa Loja Virtual</a></p>
+							</div>
+						</aside>
+					</div>
+					<div class="col-md-8 col-lg-9">
+						<h3>Projetos e Adequação</h3>
+
+						<div class="row">
+                            <div class="col-md-8"><img src="../../media/5775503d98ef87.04592245.jpg" alt="" class="img-prod img-responsive"></div>
+                            							<div class="col-md-4 pos-venda-img">
+								<img src="../../assets/images/pos-venda.png" alt="">
+                            </div>
+                            						</div>
+
+						<p>A <b>ALPHENZ</b> &eacute; plenamente capacitada para o atendimento de reformas de esta&ccedil;&otilde;es, assim como elabora&ccedil;&atilde;o de projetos, adequa&ccedil;&atilde;o / retrofit, licen&ccedil;as de amplia&ccedil;&atilde;o etc.</p>
+<p>S&atilde;o utilizados softwares para projetos em 3D, projeto de detalhamento e demais servi&ccedil;os necess&aacute;rios para a perfeita e completa implanta&ccedil;&atilde;o das a&ccedil;&otilde;es propostas.</p>
+<p></p>
+<p>Nossos Projetos v&atilde;o com todos os par&acirc;metros detalhados inclusive:</p>
+<p></p>
+<ul>
+<li>Memorial Descritivo;</li>
+<li>Memorial de Calculo;</li>
+<li>Layout;</li>
+<li>Perfil Hidr&aacute;ulico;</li>
+<li>Perfil de Lodo;</li>
+<li>Manual de Opera&ccedil;&atilde;o;</li>
+<li>ART.</li>
+</ul>
+						
+						
+						
+						<div id="pos-venda">
+							<h3>Solicite um orçamento</h3>
+
+							<form action="https://www.grupoalphenz.com.br/send-orcamento.php" method="post">
+								<div class="form-group">
+									<input type="text" name="nome" class="form-control" placeholder="Nome" required>
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" class="form-control" placeholder="E-mail" required>
+								</div>
+								<div class="form-group">
+									<input type="text" name="telefone" class="form-control" placeholder="Telefone" required>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<select name="media" class="form-control">
+												<option>Onde nos encontrou?</option>
+												<option value="1">Google</option>
+												<option value="2">Facebook</option>
+												<option value="3">Youtube</option>
+												<option value="4">Revistas</option>
+												<option value="5">Já conhecia</option>
+												<option value="6">Indicação</option>
+												<option value="7">Outros</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<textarea name="mensagem" class="form-control" rows="5" placeholder="Mensagem"></textarea>
+								</div>
+
+								<button class="btn">Enviar</button>
+							</form>
+						</div>
+
+						<div id="compre-online" class="visible-xs visible-sm">
+							<h2>Compre Online</h2>
+							<p><a href="http://alphenzindustria.lojavirtualnuvem.com.br/" target="_blank"><img src="../../assets/images/big-cart.png" alt=""> Acesse nossa Loja Virtual</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+			<footer id="main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2 logo">
+							<img src="../../assets/svg/logo_alphenz_branco.svg" width="160" height="auto" alt="Alphenz">
+						</div>
+						<div class="col-md-7">
+							<address>
+								<h4>Endereços:</h4>
+
+								<p>Avenida Sagitário, 138 - Conjunto 1414 – Alphaville Conde II – Barueri – SP - CEP: 06.473-073 - (11) 2664-0550 <br>
+								Avenida Estados Unidos, 1090 - Jd. Europa - Piracicaba (SP) - CEP 13.416-500 - (19) 3302-9606 <br>
+								Rua Frei Vital de Primeiro, 247 - Vila Pacaembú - Piracicaba (SP) - CEP 13.424-580 - (19) 3302-9606</p>
+							</address>
+						</div>
+						<div class="col-md-3 ml">
+							<div class="ligue">
+								<p>Ligue: <span>(19) 3302-9606</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-2 col-md-10">
+							<hr>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 clearfix">
+							<div class="social-medias">
+								<a href="https://www.facebook.com/GrupoAlphenz" target="_blank"><img src="../../assets/images/ico-fb-w.png" alt=""></a>
+								<a href="http://www.youtube.com/channel/UCKqVX8EvWZf9eBVAzhVaHWQ" target="_blank"><img src="../../assets/images/ico-yt-w.png" alt=""></a>
+								<a href="http://www.linkedin.com/company/grupo-alphenz" target="_blank"><img src="../../assets/images/ico-it-w.png" alt=""></a>
+                                <a href="https://www.instagram.com/grupoalphenz/" target="_blank"><img src="../../assets/images/ig2.png" alt="" class="hover"></a>
+							</div>
+						</div>
+						<div class="col-md-10 clearfix">
+							<p class="financiamentos">
+								<span>Financiamentos:</span>
+								<img src="../../assets/images/finame.png" alt="Finame">
+								<img src="../../assets/images/bndes.png" alt="BNDES">
+							</p>
+
+							<div class="selos">
+								<p>
+									<span>Certificados:</span>
+									<img src="../../assets/images/selo-petrobras.svg" width="69" alt="">
+									<img src="../../assets/images/selo-iso-9001.png" alt="">
+									<img src="../../assets/images/selo-iso-14001.png" alt="">
+									<img src="../../assets/images/selo-ohsas-18001.png" alt="">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="dev">
+					<div class="container">
+						<span>© Copyright 2016 - GRUPO ALPHENZ - Todos os direitos reservados - All rights reserved.</span>
+					</div>
+				</div>
+			</footer>
+        </div> <!-- #main-content -->
+
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=551933029606&amp;text=Ol%C3%A1,%20Grupo%20Alphenz" target="_blank" title="WhatsApp">
+            <img src="../../assets/images/whatsapp.png" alt="WhatsApp">
+        </a>
+
+		<!-- Código do Google para tag de remarketing -->
+		<!--
+		As tags de remarketing não podem ser associadas a informações pessoais de identificação nem inseridas em páginas relacionadas a categorias de confidencialidade. Veja mais informações e instruções sobre como configurar a tag em: http://google.com/ads/remarketingsetup
+		-->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 985026913;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="../../../www.googleadservices.com/pagead/f.txt">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/985026913/?value=0&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+
+        <!--[if (lt IE 9) | (IE 9)]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+			<script src="assets/vendor/jquery.placeholder.min.js"></script>
+		<![endif]-->
+		<!--[if (gte IE 10) | (!IE)]><!-->
+			<script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+		<!--<![endif]-->
+		
+	    <!--
+		<script type="text/javascript">
+			var _tn = _tn || [];
+			_tn.push(['_setAccount','c48ac2911e8ef3f8a50cd8702c7cec49']);
+			_tn.push(['_setAction','track-view']);
+			(function() {
+			    document.write(unescape("%3Cspan id='tolvnow'%3E%3C/span%3E"));
+			    var tss = document.createElement('script'); tss.type = 'text/javascript'; tss.async = true;
+			    tss.src = '//tracker.tolvnow.com/js/tn.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tss, s);
+			})();
+        </script>
+        -->
+
+		<script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-50383985-1', 'grupoalphenz.com.br');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+        </script>
+        
+        <script src="../../assets/vendor/plugins.js"></script>
+
+                		<script src="../../assets/js/main.js"></script>
+        	
+            <script type="text/javascript" async src="../../../d335luupugsy2.cloudfront.net/js/loader-scripts/257fa520-aa64-4f5d-b3f2-48570da5fc4b-loader.js"></script>
+    </body>
+
+<!-- Mirrored from www.grupoalphenz.com.br/servicos/projetos-e-adequacao/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Aug 2018 16:31:12 GMT -->
+</html>
